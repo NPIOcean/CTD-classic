@@ -20,3 +20,6 @@ Described in [workflow.md](workflow.md)
 
 Requires:
 - [SBE Data Processing](https://www.seabird.com/software)
+
+## Additional info
+- [Variable name overview](https://docs.google.com/spreadsheets/d/1RBGrF3EpTsY2bSWDIT-T6CzXqMzAzaFxAbrmaeaw6wE/edit#gid=0)
