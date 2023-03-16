@@ -17,3 +17,6 @@ The project files can be found on NPDATA:
 
 ## Workflow
 Described in [workflow.md](workflow.md)
+
+Requires:
+- [SBE Data Processing](https://www.seabird.com/software)
