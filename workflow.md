@@ -1,16 +1,28 @@
-## Layout
+# Worfklow
+General processing chain:
+1. Windows SBE processing: `cruiseTag/scripts/*.bat`
+2. Matlab processing:
+  a. `cruiseTag/scripts/cnv2mat.m`
+  b. `cruiseTag/scripts/btl2mat.m`
+  c. `cruiseTag/scripts/combine_mat.m`
+3. NetCDF conversion with NetCDF-Creator using the config file: `cruiseTag/netcdf/cruiseTag.json`
+  - usually the work directory of the software is set to the parent folder of the `cruiseTag`
+
+
+
+## Processing on Windows
+### Directory structure
 Duplicate the template folder and rename to desired name.
 The folder has to be in the same directory as the folder `default_psa` and `default_scripts`. This is because batch files will load processing scripts from those folders.
 
-## Setup
-### Folder structure
+### Init structure
 - copy all CTD files besides `.cnv` and `.btl` to the `raw` folder (`.bl`|`.hdr`|`.hex`|`.XMLCON`)
 - copy one `.XMLCON` file per CTD setting to the `setup` folder, meaning that if the setup of the CTD never changed then one `.XMLCON` file (e.g. of the first station) would be enough for the whole cruise
 - modify that `.XMLCON` file for CDOM using
   - Dark output=0
   - Scale factor=1
 
-## Processing
+
 ### SBE processing (first time)
 Manually run SBE processing once in order to update the `.psa` files located in `new_cruise\setup\psa_general\`.
 
