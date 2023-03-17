@@ -2,9 +2,9 @@
 General processing chain:
 1. Windows SBE processing: `cruiseTag/scripts/*.bat`
 2. Matlab processing:
-  a. `cruiseTag/scripts/cnv2mat.m`
-  b. `cruiseTag/scripts/btl2mat.m`
-  c. `cruiseTag/scripts/combine_mat.m`
+    1. `cruiseTag/scripts/cnv2mat.m`
+    2. `cruiseTag/scripts/btl2mat.m`
+    3. `cruiseTag/scripts/combine_mat.m`
 3. NetCDF conversion with NetCDF-Creator using the config file: `cruiseTag/netcdf/cruiseTag.json`
   - usually the work directory of the software is set to the parent folder of the `cruiseTag`
 
