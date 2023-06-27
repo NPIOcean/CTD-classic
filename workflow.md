@@ -152,6 +152,8 @@ The script does:
 
 
 ## NetCDF-Creator
+Requires the [NetCDF-Creator Software](https://gitlab.com/npolar/netcdf-creator).
+
 Uses the `.json` config file in the `netcdf` directory. Use one from a previous year as template and adjust it to the needs.
 - load the datafile `mat/all_combined_published.mat`
 - save in `netcdf/bin`, `netcdf/bot` or `netcdf/carbon_chemistry` depending on what is converted
