@@ -9,10 +9,11 @@ General processing chain:
   - usually the work directory of the NetCDF-Creator software is set to the parent folder of the `cruiseTag`
 
 
+## Processing setup
+Requires Windows OS.
 
-## Processing on Windows
 ### Directory structure
-Duplicate the template folder `new_cruise_template` and rename to desired `cruiseTag` name. Keep in same directory as `default_psa` and `default_scripts`. This is because batch files will load processing scripts from those folders. If starting in a new work directory make sure to take a copy of those two directories as well.
+Duplicate the template folder `new_cruise_template` (`/npdata/project/Fram_strait/SOURCE/CTD/new_cruise_template`) and rename to desired `cruiseTag` name (e.g. `fs_YYYY`). Keep in same directory as `default_psa` and `default_scripts`. This is because batch files will load processing scripts from those folders. If starting in a new work directory make sure to take a copy of those two directories as well.
 
 
 ### Init structure
@@ -23,7 +24,7 @@ Duplicate the template folder `new_cruise_template` and rename to desired `cruis
   - Scale factor=1
 
 
-### SBE processing (first time manually)
+### A) Initial setup for SBE batch processing
 Manually run SBE processing once in order to update the `.psa` files located in `cruiseTag\setup\psa_general\`.
 
 #### 1 Data Conversion
@@ -80,10 +81,11 @@ Run all three filter `.psa` once with one station to update them.
 This will for this manual run only overwrite files but the automatic processing will produce an extra version at this point ending on `_bin_cdom.cnv`
 
 
-### SBE processing (automatic)
+### B) Setup automated SBE batch processing
 Referring to `script\stnA-stnB_call_processing.bat`. See description in the file for further information on how to specify.
 
-### Different instrument setups
+### C) Additional steps
+#### Different instrument setups
 In case the CTD setup changes multiple times during the cruise - i.e. sensors get swapped, added or removed. Then the whole process above has to be done again for each specific range of same stations (same CTD setup).
 - duplicate the `psa_general` folder and for instance name it after the station range
 - get one `.XMLCON` file for that station range and again modify CDOM
@@ -93,7 +95,7 @@ In case the CTD setup changes multiple times during the cruise - i.e. sensors ge
 After setting this up once all `.bat` files can be double clicked to run over the specific station ranges again for reprocessing or if data was updated for instance.
 
 
-### Different CTDs
+#### Different CTDs
 In case different CTDs are used on one cruise, for instance one 12 and one 24 rosette version.
 Make a raw folder each and treat both as separate sensor setups. Follow procedure like above but instead of having one "raw" folder it is now two. Move the raw files into the specific folders and adjust the batch scripts of each setting to refer to the right raw folder.
 
