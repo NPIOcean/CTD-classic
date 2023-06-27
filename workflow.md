@@ -116,6 +116,30 @@ Using `script/btl2mat.m`
 - follow instructions in script
 - for each station range of the same setup check a `.cnv` file and update the reading function in the end of the script for each station range.
 
+#### Sample number logsheets
+Fill `.xls` sheet located at `logsheets/logsheet.xls`
+
+#### Salinity measurements
+Fill `.xls` sheet located at `salts/SALTS.xls`. Open `salts/salts2mat.m` and adjust `sample_number = [1:24]';` to the represent the number of samples in the sheets. Run the script which will create the file `salts/salts2mat.mat` which is loaded in the bottle file processing.
+
+__If not relevant uncomment respective part in `script/btl2mat.m`__
+
+#### Winkler measurements
+Fill `.xlsx` sheet located at `winkler/winkler.xlsx`. 
+1. fill session
+2. get summary from next sheet tab
+3. export the summary sheet as `.csv`
+4. open `winkler/winkler_summary.xlsx`
+5. Data > From Text/CSV > import saved `winkler.csv` 
+The reason for step 3-5 is that Matlab can otherwise not read the result as a number but rather reads the equation. 
+
+Finally, run the script `winkler/wink2mat.m` which will create the file `wink/wink2mat.mat` which is loaded in the bottle file processing.
+
+__If not relevant uncomment respective part in `script/btl2mat.m`__
+
+
+
+
 
 ### Merge dataset and add results
 Using `script/combine_mat.m`
