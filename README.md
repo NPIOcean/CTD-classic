@@ -20,6 +20,7 @@ Described in [workflow.md](workflow.md)
 
 Requires:
 - [SBE Data Processing](https://www.seabird.com/software)
+  - __NOTE__: Mac and Windows version currently only at: `forskning/Yannick/NetCDF_Creator/`
 - [NetCDF-Creator](https://gitlab.com/npolar/netcdf-creator)
 
 ## Additional info
