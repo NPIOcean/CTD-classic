@@ -1,0 +1,1 @@
+binavg /p%1BinAvg.psa /i%2 /o%3 /f%4 /a_bin

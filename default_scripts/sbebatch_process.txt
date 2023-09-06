@@ -1,0 +1,3 @@
+filter /p%1Filter.psa /i%2 /o%3 /f%4
+celltm /p%1CellTM.psa /i%2 /o%3 /f%4
+loopedit /p%1LoopEdit.psa /i%2 /o%3 /f%4

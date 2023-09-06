@@ -1,0 +1,39 @@
+* Sea-Bird SBE 9 Data File:
+* FileName = C:\Seabird\CTDDATA\Sta0001.hdr
+* Software Version Seasave V 7.26.7.107
+* Temperature SN = 5884
+* Conductivity SN = 2860
+* Number of Bytes Per Scan = 44
+* Number of Voltage Words = 5
+* Number of Scans Averaged by the Deck Unit = 1
+* Append System Time to Every Scan
+* System UpLoad Time = Jan 01 2000 06:43:34
+* NMEA Latitude = 81 16.09 N
+* NMEA Longitude = 009 47.15 W
+* NMEA UTC (Time) = Jan 01 2000 06:43:32
+* Store Lat/Lon Data = Append to Every Scan
+* SBE 11plus V 5.2
+* number of scans to average = 1
+* pressure baud rate = 9600
+* NMEA baud rate = 9600
+* surface PAR voltage added to scan
+* A/D offset = 5
+* Latitude/Longitude added to scan
+* GPIB address = 1
+* advance primary conductivity  0.073 seconds
+* advance secondary conductivity  0.073 seconds
+* autorun on power up is disabled
+* S>
+** Ship name [platform code]: Kronprins Haakon [9566] "" 
+** Station: 0001
+** Cruise: 2000xxxxxx 
+** Echodepth [m]: 151
+** Log [Nm]: 1637.09
+** Wind-Dir [deg T] Force [m/s]: 20 05
+** Airtemp (dry) [degC]: 1.1
+** Air pressure [mBar]: 1014.9
+** CTD-snr, rosette-snr, deckunit-snr: 09-1346, 32-1222, 11-1121 
+** Moonpool(M)/Skuteside(S): S
+** Cruise name: TEST 2000 
+* System UTC = Jan 01 2000 06:43:34
+*END*

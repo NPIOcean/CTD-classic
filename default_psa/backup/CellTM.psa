@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Cell_Thermal_Mass >
+  <Version value="7.26.7.129" />
+  <ServerName value="Cell Thermal Mass" />
+  <InputDir value="E:\test_bash_dev\proc" />
+  <InputFileArray size="2" GrowBy="-1" >
+    <ArrayItem index="0" value="Sta0046.cnv" />
+    <ArrayItem index="1" value="Sta0047.cnv" />
+  </InputFileArray>
+  <OutputDir value="E:\test_bash_dev\proc" />
+  <NameAppend value="" />
+  <OutputFile value="" />
+  <LastProcessed value="0" />
+  <Primary >
+    <Correct value="1" />
+    <TempSensor value="0" />
+    <TA_Amplitude value="0.030000" />
+    <TA_TimeConstant value="7.000000" />
+  </Primary>
+  <Secondary >
+    <Correct value="1" />
+    <TempSensor value="1" />
+    <TA_Amplitude value="0.030000" />
+    <TA_TimeConstant value="7.000000" />
+  </Secondary>
+</Cell_Thermal_Mass>

@@ -1,0 +1,1 @@
+wfilter /p%1W_Filter_long.psa /i%2 /o%3 /f%4 /a_bin_cdom
