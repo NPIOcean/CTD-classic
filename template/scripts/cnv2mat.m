@@ -221,6 +221,36 @@ if length(bin_cdom.origin(1,:)) ~= length(bin_cdom.filtered(1,:))
     disp('Since there is no CDOM sensor on it is filled with NaN anyway, but the file hast to exist to get the right dimensions.')
 end
 
+
+% -------------------------------------------------------------------------
+% Apply CDOM calibration to get Raman units
+% -------------------------------------------------------------------------
+cdom_cal_file = ['..' filesep '..' filesep 'results_external' filesep 'cdom' filesep 'FS_DOMfluormeterCalibration.xlsx'];
+cdom_cal_sheet = ['FS' cruise_year 'Model'];
+
+cdom_cal = readtable(cdom_cal_file,'Sheet',cdom_cal_sheet,'Range','B2:B5');
+
+coeff.intercept = cdom_cal.Var1(1);
+coeff.T = cdom_cal.Var1(2);
+coeff.D = cdom_cal.Var1(3);
+coeff.TD = cdom_cal.Var1(4);
+
+sensor_data.T = bin_temp1;
+sensor_data.D = bin_cdom.filtered;
+
+bin_cdom.cal = coeff.T .* sensor_data.T + coeff.D .* sensor_data.D + coeff.TD .* sensor_data.T .* sensor_data.D + coeff.intercept;
+[RowNrs,ColNrs] = find(bin_cdom.cal < 0);
+for i = 1:length(RowNrs)
+    disp(['bin_cdom.cal(' num2str(ColNrs(i)) ',' num2str(RowNrs(i)) ') < 0 => set to NaN'])
+end
+% set wrong values to NaN
+bin_cdom.cal(bin_cdom.cal < 0) = NaN;
+
+bin_cdom.cal_equation = ['(' num2str(coeff.T) ' x T) + (' num2str(coeff.D) ' x DOMFL) + (' num2str(coeff.TD) ' x T x DOMFL) + (' num2str(coeff.intercept) ')'];
+
+clear cdom_cal cdom_cal_file cdom_cal_sheet coeff sensor_data RowNrs ColNrs
+
+
 % % -------------------------------------------------------------------------
 % %% Station fixes
 % % Remove entries that are bad
