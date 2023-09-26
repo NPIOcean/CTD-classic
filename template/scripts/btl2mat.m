@@ -4,6 +4,12 @@
 % 3) Read sample measurement results from tidy MatLab files
 % Paul A. Dodd | 07 September 2019
 
+diary('btl2mat_LOG.txt')
+disp(' ')
+disp('-------------------------------------------------------------------')
+disp(['LOG from ',datestr(now,'dd.mm.yyyy','local'),' ',datestr(now,'hh:MM:ss','local')])
+
+
 % Clear
 close all
 clear all
@@ -621,6 +627,8 @@ save(filename)
 
   
 disp(['Saved ',filename])
+
+diary off
 
 %% Functions
 % -------------------------------------------------------------------------

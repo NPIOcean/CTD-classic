@@ -4,6 +4,12 @@
 % Yannick Kern | 24 July 2022
 % Updated to automatically create CDOM struct with origin and filterd data
 
+
+diary('cnv2mat_LOG.txt')
+disp(' ')
+disp('-------------------------------------------------------------------')
+disp(['LOG from ',datestr(now,'dd.mm.yyyy','local'),' ',datestr(now,'hh:MM:ss','local')])
+
 % Clear
 close all
 clear all
@@ -262,7 +268,7 @@ disp(['Saved ',filename])
 % copyfile(filename,'/run/user/1000/gvfs/smb-share:server=nas1-khaakon.hi.no,share=tokt/Arbeidskatalog_tokt/2022710/CTD/matlab/')
 
 
-
+diary off
 
 %% FUNCTIONS
 % -------------------------------------------------------------------------save
