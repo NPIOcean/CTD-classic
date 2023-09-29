@@ -1,4 +1,4 @@
-# Worfklow
+# Workflow
 
 General processing chain:
 
