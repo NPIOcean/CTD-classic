@@ -1,6 +1,6 @@
 # `CTD-classic` workflow
 
-*Written by Yannick Kern - copied from [the CTD-classic git repository](https://github.com/NPIOcean/CTD-classic/blob/main/workflow.md)*
+*Written by Yannick Kern - located at [the CTD-classic git repository](https://github.com/NPIOcean/CTD-classic/blob/main/workflow.md)*
 
 # Workflow
 
