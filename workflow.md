@@ -116,7 +116,7 @@ The template batch processing file is found here:
 
 -  `[cruiseTag]\script\stnA-stnB_call_processing.bat`. 
 
-Start with making a copy of this file, e.g.  `[cruiseTag]\script\[cruiseTag]_batch_proc_all.bat`. 
+Start with renaming the batch script to reflect the stations it will process, e.g.  `[cruiseTag]\script\stn1-stn99_call_processing.bat`. There will need to be one `.bat` file everytime the instrument setup on the CTD has changed (see [Additional steps](#e-additional-steps)).
 
 The file can now be executed from a terminal, or by **double clicking the file** in Windows Explorer.
 _____
