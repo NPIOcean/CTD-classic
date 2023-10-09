@@ -110,7 +110,7 @@ Run all three filter `.psa` once with one station to update them.
 
 ### D) Setup automated SBE batch processing
 
-We have now hopefully set up the `.psa` files for your dataset. We can now run the batch processing script which will process *all* the data in the `[cruiseTag]\raw` folder, adding new files to the `[cruiseTag]\proc`.  
+We have now set up the `.psa` files for your dataset. We can now run the batch processing script which will process *all* the data in the `[cruiseTag]\raw` folder, adding new files to the `[cruiseTag]\proc`.  
 
 The template batch processing file is found here:
 
