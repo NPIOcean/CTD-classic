@@ -8,28 +8,26 @@ The procedure, described [here](workflow.md), involves:
 
 - Creating dataset-specific configuration files in the *SBE Data Processing* software.
 - Running SBE processing on a CTD dataset using Windows batch scripts.
-- Quality control of the data in Matlab. 
-- Conversion to CF-formatted NetCDF using the *NetCDF-creator* tool.
+
+  **NOTE:**
+
+This `with kval` branch let's you chose from here if you want to 
+- 
+  - Do quality control of the data in Matlab.
+  - Conversion to CF-formatted NetCDF using the *NetCDF-creator* tool.
+
+  or
+  -
+  -  use python-based [`kval`](https://github.com/NPIOcean/kval) functions for this.
+  -  This alternative procedure is highly experimental, and uses the **iC3_field_school_2024 dataset as testbed and template**.
+  -  The `with_lval`procedure is not yet documented in the [workflow](workflow.md) documentation and the below comments in this file.
 
 
-**NOTE:**
-
-An alternative procedure, using Python and not reliant on proprietary software, is under development. This alternative procedure is highly experimental, and **the *classic* procedure is currently the recommended way of processing CTD data**.
 
 
 ## Instructions
 
-All the relevant datasets can be found on `data.npolar.no` using: 
-
-```
-https://data.npolar.no/home/search?q=CTD%20profiles%20from%20NPI%20cruise%20FS%20paul
-```
-
-The project files can be found on NPDATA: 
-
-```
-npdata/project/Fram_strait/SOURCE/CTD
-```
+All the relevant datasets can be found on the iC3 field school teams.
 
 ### List of script file extensions
 
