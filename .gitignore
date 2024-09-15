@@ -1,0 +1,45 @@
+# thinf's quick and dirty fix
+*.hex
+*.cnv
+*.hdr
+*.XMLCON
+*.ros
+*.jpg
+**/raw/*
+**/proc/*
+**/mat/*
+**/netcdf/*
+
+# from kval template
+# Ignore data files
+data/source/btl/*
+data/source/cnv/*
+data/source/cnv_pre_bin/*
+data/source/salinometer/*
+data/intermediate/nc_initial/*
+data/intermediate/nc_edited/*
+data/intermediate/mat/*
+data/final/*
+
+# Track .gitkeep files in these directories
+!data/source/btl/.gitkeep
+!data/source/cnv/.gitkeep
+!data/source/cnv_pre_bin/.gitkeep
+!data/source/salinometer/.gitkeep
+!data/intermediate/nc_initial/.gitkeep
+!data/intermediate/nc_edited/.gitkeep
+!data/intermediate/mat/.gitkeep
+!data/final/.gitkeep
+
+
+# Strip notebook outputs
+*.ipynb filter=strip-notebook-output
+*-checkpoint.ipynb
+**/*.ipynb_checkpoints/
+
+# Ignore Python cache and compiled files
+__pycache__/
+*.pyc
+**/*.pyc
+code/initial/__pycache__/*
+code/initial/.ipynb_checkpoints/*
