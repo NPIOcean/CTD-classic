@@ -1,0 +1,23 @@
+name: kval_ctd
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.11
+  - jupyter
+  - nb-clean=3.2.0
+  - ipykernel
+  - nb_conda_kernels
+  - glob2
+  - numpy
+  - scipy
+  - xarray
+  - pandas
+  - openpyxl
+  - matplotlib
+  - cf-units
+  - pip
+
+  - pip:
+    - git+https://github.com/NPIOcean/kval.git@73d8339a0e101ab9506405c799662bdee3b21f04
+
