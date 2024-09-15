@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Derive >
+  <Version value="7.26.7.129" />
+  <ServerName value="Derive" />
+  <InstrumentPath value="C:\Users\fsy003\OneDrive - UiT Office 365\2024_data\CTD\CTD-classic-main\iC3_field_school_2024\setup\BERET.xmlcon" />
+  <InstrumentMatch value="0" />
+  <InputDir value="C:\Users\hattermann\OneDrive - Norsk Polarinstitutt\projects\iC3\field_school\2024_data\CTD\CTD-classic-main\iC3_field_school_2024\proc" />
+  <InputFileArray size="2" GrowBy="-1" >
+    <ArrayItem index="0" value="stnr0072.cnv" />
+    <ArrayItem index="1" value="stnr60.cnv" />
+  </InputFileArray>
+  <OutputDir value="C:\Users\fsy003\OneDrive - UiT Office 365\2024_data\CTD\CTD-classic-main\iC3_field_school_2024\proc" />
+  <NameAppend value="" />
+  <OutputFile value="" />
+  <LastProcessed value="0" />
+  <CalcArray Size="1" >
+    <CalcArrayItem index="0" CalcID="70" >
+      <Calc UnitID="49" Ordinal="0" >
+        <FullName value="Salinity, Practical [PSU]" />
+      </Calc>
+    </CalcArrayItem>
+  </CalcArray>
+  <MiscellaneousDataForCalculations >
+    <Latitude value="79.000000" />
+    <Longitude value="0.000000" />
+    <DescentRateAndAcceleration >
+      <WindowSize value="2.000000" />
+    </DescentRateAndAcceleration>
+    <Oxygen >
+      <WindowSize value="2.000000" />
+      <ApplyHysteresisCorrection value="1" />
+      <ApplyTauCorrection value="1" />
+    </Oxygen>
+    <AverageSoundVelocity >
+      <MinimumPressure value="7.000000" />
+      <MinimumSalinity value="20.000000" />
+      <PressureWindowSize value="20.000000" />
+      <TimeWindowSize value="60.000000" />
+    </AverageSoundVelocity>
+    <PlumeAnomaly >
+      <ThetaB value="0.000000" />
+      <SalinityB value="0.000000" />
+      <ThetaZSalinityZRatio value="0.000000" />
+      <ReferencePressure value="0.000000" />
+    </PlumeAnomaly>
+    <PotentialTempAnomaly >
+      <A0 value="0.000000" />
+      <A1 value="0.000000" />
+      <A1Multiplier value="0" />
+    </PotentialTempAnomaly>
+  </MiscellaneousDataForCalculations>
+</Derive>
