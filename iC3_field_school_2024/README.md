@@ -13,7 +13,7 @@ Goals/ next steps:
     > To calibrate the bottle Chl-a data to the bottle fluorescence measurements, we first only considered the bottle Chl-a value when the standard deviation of the bottle value divided by the fluorescence measurement was < 0.15, to avoid highly noisy parts of the fluorescence profile. Then we subtracted the offset value (1.0495) from the bottle fluorescence measurement, then we fit a linear regression with the bottle Chl-a measurement.
 
 Products:
-- Reference plots of individual CTD profile: T, S, sigma0, Chla; PAR (or light index)
+- Reference plots of individual CTD profile: T, S, sigma0, Chla; PAR (or attenuation coefficient, kd, deived as slope of the log fit of the profile)
 - Temperature-Salinity diagram for identification of water masses
 - depth integrated Chla values
 - mixed layer depth (MLD)
