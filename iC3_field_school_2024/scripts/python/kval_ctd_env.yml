@@ -17,6 +17,7 @@ dependencies:
   - matplotlib
   - cf-units
   - pip
+  - gsw
 
   - pip:
     - git+https://github.com/NPIOcean/kval.git@73d8339a0e101ab9506405c799662bdee3b21f04
